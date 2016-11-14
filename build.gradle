@@ -1,0 +1,22 @@
+group 'ru.inn.avborg'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+
+    compile group: 'org.springframework', name: 'spring-framework-bom', version: '4.3.0.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.0.RELEASE'
+    compile group: 'org.apache.cxf', name: 'cxf-rt-frontend-jaxws', version: '3.1.6'
+    compile group: 'org.apache.cxf', name: 'cxf-rt-transports-http', version: '3.1.6'
+
+
+}
